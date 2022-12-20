@@ -1,0 +1,11 @@
+services:
+  postgres:
+    container_name: mysql
+    image: mysql
+    environment:
+      MYSQL_DATABASE: 'todo-db'
+      MYSQL_USER: '${DB_USER}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+    ports:
+      - "3306:3306"

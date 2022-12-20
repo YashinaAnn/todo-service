@@ -1,0 +1,5 @@
+CREATE TABLE todos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    item VARCHAR(255) NOT NULL,
+    completed BOOLEAN
+);
